@@ -64,8 +64,8 @@ class Car{
     public function start():string 
     {
         $sentence = '';
-        while ($this->currentSpeed = 0) {
-            $this->currentSpeed++;
+        if ($this->currentSpeed = 0) {
+            $this->currentSpeed+1;
             $sentence .= 'The car has been started!';
         }
         $sentence .= 'I\'m already started';
