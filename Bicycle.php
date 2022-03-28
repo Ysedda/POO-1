@@ -1,4 +1,5 @@
 class Bicycle {
+
     private int $nbWheel;
 
     private int $currentSpeed;
