@@ -2,48 +2,54 @@
 
 class Car{
     private int $nbWheel;
-    public function getNbWheel():int
-    {
-        return $this->nbWheel;
-    }
 
     private int $currentSpeed;
-    public function getCurrentSpeed():int
-    {
-        return $this->currentSpeed;
-    }
 
     private string $color;
-    public function getColor():string 
-    {
-        return $this->color;
-    }
-
+    
     private int $nbSeats;
-    public function getNbSeats():int 
-    {
-        return $this->nbSeats;
-    }
 
     private string $energy;
-    public function getEnergy():int 
-    {
-        return $this->energy;
-    }
 
     private int $energyLevel;
-    public function getEnergyLevel()
-    {
-        return $this->energyLevel;
-    }
- 
+    
     public function __construct(string $color, int $nbSeats, string $energy)
     {
     $this->color = $color;
     $this->nbSeats = $nbSeats;
     $this->energy = $energy;
     }
-
+    
+    public function getNbWheel():int
+    {
+        return $this->nbWheel;
+    }
+    
+     public function getCurrentSpeed():int
+    {
+        return $this->currentSpeed;
+    }
+    
+    public function getColor():string 
+    {
+        return $this->color;
+    }
+    
+    public function getNbSeats():int 
+    {
+        return $this->nbSeats;
+    }
+    
+    public function getEnergy():int 
+    {
+        return $this->energy;
+    }
+    
+    public function getEnergyLevel()
+    {
+        return $this->energyLevel;
+    }
+    
     public function forward():string 
     {
         $this->currentSpeed = 15;
